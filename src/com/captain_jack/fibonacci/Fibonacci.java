@@ -1,4 +1,4 @@
-package com.captain_jack;
+package com.captain_jack.fibonacci;
 
 import java.util.HashMap;
 import java.util.Map;
