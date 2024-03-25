@@ -29,7 +29,6 @@ public class CanSum {
 
         if (targetSum == 0) return true;
         if (targetSum < 0) return false;
-        int x = 0;
 
         for (int num : numbers) {
             int remainder = targetSum - num;
