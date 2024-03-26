@@ -2,7 +2,6 @@ package com.captain_jack;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Java Program to Count Number of Duplicate Words in a Given String

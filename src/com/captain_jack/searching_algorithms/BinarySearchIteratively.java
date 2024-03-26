@@ -31,11 +31,11 @@ public class BinarySearchIteratively {
 
             int mid = (low + high) / 2; // Calculates the middle index (mid) of the current search range.
 
-            if (sortedArray[mid] < key) { // If mid value is less than key, discards the lower half of the array (low = mid + 1).
+            if (sortedArray[mid] < key) { // If mid-value is less than key, discards the lower half of the array (low = mid + 1).
                 low = mid + 1;
-            } else if (sortedArray[mid] > key) { // If mid value is greater than key, discards the upper half (high = mid - 1).
+            } else if (sortedArray[mid] > key) { // If mid-value is greater than key, discards the upper half (high = mid - 1).
                 high = mid - 1;
-            } else if (sortedArray[mid] == key) { // If the mid value is equal to key, then the key is found, sets index to mid and breaks the loop.
+            } else if (sortedArray[mid] == key) { // If the mid-value is equal to key, then the key is found, sets index to mid and breaks the loop.
                 index = mid;
                 break;
             }
