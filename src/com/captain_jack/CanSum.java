@@ -14,7 +14,7 @@ public class CanSum {
 
     public static void main(String[] args) {
         int targetSum = 7;
-        int numbers[] = {5, 3, 4, 7};
+        int[] numbers = {5, 3, 4, 7};
 
         System.out.println("Target Sum: " + targetSum);
         System.out.println("Numbers: " + java.util.Arrays.toString(numbers));

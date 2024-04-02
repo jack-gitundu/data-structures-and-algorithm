@@ -13,12 +13,12 @@ package com.captain_jack.searching_algorithms;
 public class MaxValue {
 
     public static void main(String[] args) {
-        int array[] = {3, 5, 15, 50, 11, 10, 8, 6};
+        int[] array = {3, 5, 15, 50, 11, 10, 8, 6};
         int n = array.length;
         System.out.println("The maximum Value " + findMaximumValue(array, 0, n - 1));
     }
 
-    private static int findMaximumValue(int array[], int start, int end) {
+    private static int findMaximumValue(int[] array, int start, int end) {
 
         if (start == end) return array[start];
 
