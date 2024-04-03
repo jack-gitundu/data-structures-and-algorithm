@@ -33,15 +33,9 @@ public class HowSum {
     }
 
     private static List<Integer> sumValuesHelper(int targetSum, int[] numbers, Map<Integer, List<Integer>> memo) {
-        if (memo.containsKey(targetSum)) {
-            return memo.get(targetSum);
-        }
-        if (targetSum == 0) {
-            return new ArrayList<>();
-        }
-        if (targetSum < 0) {
-            return null;
-        }
+        if (memo.containsKey(targetSum)) return memo.get(targetSum);
+        if (targetSum == 0) return new ArrayList<>();
+        if (targetSum < 0) return null;
 
         for (int num : numbers) {
             int remainder = targetSum - num;
