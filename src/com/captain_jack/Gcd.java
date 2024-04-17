@@ -15,10 +15,14 @@ public class Gcd {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the first value: ");
         int a = scan.nextInt();
+
+        System.out.print("Enter the second value: ");
         int b = scan.nextInt();
 
-        System.out.println(euclidGcd(a, b));
+        int gcd = euclidGcd(a, b);
+        System.out.println("GCD of " + a + " and " + b + " is: " + gcd);
     }
 
     static int euclidGcd(int a, int b) {
