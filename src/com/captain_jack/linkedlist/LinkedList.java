@@ -25,7 +25,7 @@ public class LinkedList {
     public void printList() {
         Node temp = head;
         while (temp != null) {
-            System.out.print(temp.value + " ");
+            System.out.print(temp.value + "\n");
             temp = temp.next;
         }
     }
@@ -80,6 +80,15 @@ public class LinkedList {
         length--;
         if (length == 0) {
             tail = null;
+        }
+        return temp;
+    }
+
+    public Node get(int index) {
+        if (index < 0 || index >= length) return null;
+        Node temp = head;
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
         }
         return temp;
     }
