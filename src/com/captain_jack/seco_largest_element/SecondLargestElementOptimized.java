@@ -5,7 +5,7 @@ package com.captain_jack.seco_largest_element;
  */
 public class SecondLargestElementOptimized {
 
-    static int SecondLargestElementNaive(int[] arr) {
+    static int secondLargestElementNaive(int[] arr) {
         int n = arr.length;
 
         int largest = -1, secondLargest = -1;
@@ -30,6 +30,7 @@ public class SecondLargestElementOptimized {
     }
 
     public static void main(String[] args) {
-
+        int[] arr = {12, 35, 1, 10, 34, 1};
+        System.out.println(secondLargestElementNaive(arr));
     }
 }
